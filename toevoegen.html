@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - GamuxD</title>
+    <title>Collectie - GamuxD</title>
+    <script src="js/collectie.js" defer></script>
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/bottom.css" />
-    <link rel="stylesheet" href="css/hoofdpagina.css" />
+    <link rel="stylesheet" href="css/toevoegen.css" />
     <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon" />
   </head>
   <body>
@@ -24,34 +25,22 @@
       </div>
 
       <div class="nav-links">
-        <a href="#">Home</a>
+        <a href="hoofdpagina.html">Home</a>
         <a href="collectie.html">Collectie</a>
         <a href="bestellen.html">Bestellen</a>
       </div>
     </div>
-    <div>
-      <div id="main_content">
-        <div class="image3"></div>
-        <div class="image2"></div>
-        <div class="image1"></div>
-        <div class="intro-text">
-          <h2>De plek waar jij games kunt verkrijgen <br /></h2>
-          <h2>Voor de beste prijzen en beste kwaliteit</h2>
-        </div>
-        <div class="text">
-          <p>
-            Op onze webshop kunt u games bestellen die 100% gegarandeerd in orde
-            zijn. De meeste games in deze site zijn Collector's Edition of
-            hechten een hoge waarde. Zo ziet u ook welke genre het is en op
-            welke jaar het is uitgebracht.
-          </p>
-          <a href="collectie.html"
-            ><div id="button">
-              <span>Bekijk de catalogus</span>
-            </div></a
-          >
-        </div>
-      </div>
+    <div class="main_content">
+        <form method="post" action="">
+        <select name="cars" id="cars">
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+            <option value="jordans">Jordans</option>
+            <option value="under_armour">Under Armour</option>
+        </select>
+            <input type="text">
+            <input type="text">
+        </form>
     </div>
     <!-- bottom -->
     <div class="footer">

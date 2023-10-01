@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bestellen - GamuxD</title>
+    <title>Collectie - GamuxD</title>
+    <script src="js/collectie.js" defer></script>
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/bottom.css" />
     <link rel="stylesheet" href="css/collectie.css" />
@@ -25,8 +26,8 @@
 
       <div class="nav-links">
         <a href="hoofdpagina.html">Home</a>
-        <a href="collectie.html">Collectie</a>
-        <a href="#">Bestellen</a>
+        <a href="#">Collectie</a>
+        <a href="bestellen.html">Bestellen</a>
       </div>
     </div>
     <!-- bottom -->
