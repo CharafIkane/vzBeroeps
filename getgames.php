@@ -8,11 +8,11 @@ $result = mysqli_query($mysqli, $query);
 
 if (mysqli_num_rows($result) > 0) {
         while ($item = mysqli_fetch_assoc($result)) {
-                echo "<div class='game'>Game = " . $item['gameName']   . "</br>";
-                echo "Prijs = $" . $item['price']   . "</br>";
-                echo "Uitgave = " . $item['releaseYear']   . "</br>";
-                echo "Genre = " . $item['genre']   . "</br>";
-                echo "Console = " . $item['console']   . "</br>";
+                echo "<div class='game'> <p class='gameTitel'><strong>" . $item['gameName']   . "</strong></p></br>";
+                echo "<p>Prijs = $" . $item['price']   . "</p>";
+                echo "<p>Uitgave = " . $item['releaseYear']   . "</p>";
+                echo "<p>Genre = " . $item['genre']   . "</p>";
+                echo "<p>Console = " . $item['console']   . "</p>";
                 echo "</div>";
         }
 } else {

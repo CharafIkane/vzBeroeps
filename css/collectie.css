@@ -16,6 +16,10 @@ body {
 }
 #collectie {
   height: fit-content;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 8em;
 }
 
 #toevoegen {
@@ -29,8 +33,23 @@ body {
   margin-top: 2em;
   margin-left: 1em;
   margin-bottom: 2em;
+  position: relative;
+  left: 8.5%;
+}
+
+#toevoegen:hover {
+  background-color: rgba(216, 106, 189, 0.568);
 }
 a {
   text-decoration: none;
   color: black;
+}
+
+.game:nth-child(even) {
+  background-color: #cd21e4;
+  color: white;
+}
+
+.gameTitel {
+  text-align: center;
 }

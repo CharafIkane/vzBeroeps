@@ -9,6 +9,7 @@
   background-color: black;
   color: white;
   text-align: center;
+  z-index: 50;
 }
 .footer a {
   color: pink;
