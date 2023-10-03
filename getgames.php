@@ -6,10 +6,8 @@ $query = "SELECT * FROM games";
 
 $result = mysqli_query($mysqli, $query);
 
-if (mysqli_num_rows($result) > 0)
-{
-        while ($item = mysqli_fetch_assoc($result))
-        {
+if (mysqli_num_rows($result) > 0) {
+        while ($item = mysqli_fetch_assoc($result)) {
                 echo "<div class='game'>Game = " . $item['gameName']   . "</br>";
                 echo "Prijs = $" . $item['price']   . "</br>";
                 echo "Uitgave = " . $item['releaseYear']   . "</br>";

@@ -40,14 +40,18 @@
           <option value="Shooter">Shooter</option>
           <option value="Adventure">Adventure</option>
           <option value="Action">Action</option>
+          <option value="Sandbox">Sandbox</option>
+          <option value="Survival">Survival</option>
           <option value="Horror">Horror</option>
           <option value="Sport">Sport</option>
           <option value="Simulator">Simulator</option>
           <option value="Multiplayer">Multiplayer</option>
         </select>
         <br />
-        <input type="text" placeholder="Naam van het spel" /> <br />
-        <input type="text" placeholder="Jaar van uitgave" /> <br />
+        <input type="text" name="gameName" placeholder="Naam van het spel" />
+        <br />
+        <input type="text" name="releaseYear" placeholder="Jaar van uitgave" />
+        <br />
         <select name="console" id="console">
           <option value="null">- console -</option>
           <option value="Xbox 360">Xbox 360</option>
@@ -61,8 +65,9 @@
           <option value="PC">PC</option>
         </select>
         <br />
-        <input type="number" placeholder="Prijs afgerond ($)" /> <br />
-        <input type="submit" />
+        <input type="number" name="price" placeholder="Prijs afgerond ($)" />
+        <br />
+        <input type="submit" name="submit" />
       </form>
       <img src="media/halo.png" id="halo" />
     </div>
