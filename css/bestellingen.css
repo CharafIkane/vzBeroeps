@@ -1,7 +1,7 @@
 body {
   background-color: #dfaeb4;
 }
-.game {
+.bestelling {
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
@@ -11,10 +11,10 @@ body {
   transition: 0.3s;
 }
 
-.game:hover {
+.bestelling:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-#collectie {
+#besteloverzicht {
   height: fit-content;
   position: absolute;
   left: 50%;
@@ -52,5 +52,4 @@ a {
 
 .gameTitel {
   text-align: center;
-  font-size: 28px;
 }

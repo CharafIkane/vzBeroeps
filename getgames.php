@@ -16,5 +16,5 @@ if (mysqli_num_rows($result) > 0) {
                 echo "</div>";
         }
 } else {
-        echo "0 results";
+        echo "<div class='game'>0 results</div>";
 }

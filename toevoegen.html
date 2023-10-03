@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Collectie - GamuxD</title>
+    <title>Toevoegen - GamuxD</title>
     <script src="js/collectie.js" defer></script>
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/bottom.css" />
@@ -27,13 +27,13 @@
       <div class="nav-links">
         <a href="hoofdpagina.html">Home</a>
         <a href="collectie.php">Collectie</a>
-        <a href="bestellen.html">Bestellen</a>
+        <a href="bestellen.php">Bestellen</a>
       </div>
     </div>
     <div class="main_content">
       <h2 id="titel">Game toevoegen</h2>
       <form method="post" action="toevoegen.php" id="form">
-        <select name="genre" id="genre">
+        <select name="genre" id="genre" required>
           <option value="null">- genre -</option>
           <option value="rpg">RPG</option>
           <option value="Tactical Shooter">Tactical Shooter</option>
@@ -48,11 +48,21 @@
           <option value="Multiplayer">Multiplayer</option>
         </select>
         <br />
-        <input type="text" name="gameName" placeholder="Naam van het spel" />
+        <input
+          type="text"
+          name="gameName"
+          placeholder="Naam van het spel"
+          required
+        />
         <br />
-        <input type="text" name="releaseYear" placeholder="Jaar van uitgave" />
+        <input
+          type="text"
+          name="releaseYear"
+          placeholder="Jaar van uitgave"
+          required
+        />
         <br />
-        <select name="console" id="console">
+        <select name="console" id="console" required>
           <option value="null">- console -</option>
           <option value="Xbox 360">Xbox 360</option>
           <option value="XBOX ONE X/S">XBOX ONE X/S</option>
@@ -65,7 +75,12 @@
           <option value="PC">PC</option>
         </select>
         <br />
-        <input type="number" name="price" placeholder="Prijs afgerond ($)" />
+        <input
+          type="number"
+          name="price"
+          placeholder="Prijs afgerond ($)"
+          required
+        />
         <br />
         <input type="submit" name="submit" />
       </form>
@@ -75,6 +90,10 @@
     <div class="footer">
       Coded by
       <a target="_blank" href="mailto:087797@glr.nl">Charaf Ikane</a>
+      <span> | </span>
+      <a target="_blank" href="https://www.instagram.com/cib.webdev/"
+        >@cibwebdev</a
+      >
     </div>
   </body>
 </html>

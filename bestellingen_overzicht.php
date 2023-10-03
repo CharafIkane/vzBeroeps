@@ -8,7 +8,7 @@
     <script src="js/collectie.js" defer></script>
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/bottom.css" />
-    <link rel="stylesheet" href="css/collectie.css" />
+    <link rel="stylesheet" href="css/bestellingen.css" />
     <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon" />
 </head>
 
@@ -25,12 +25,12 @@
                 <span></span>
             </label>
         </div>
-        <div id="collectie">
-            <a href="toevoegen.html">
-                <div id="toevoegen">Games toevoegen</div>
+        <div id="besteloverzicht">
+            <a href="collectie.php">
+                <div id="toevoegen">Naar de collectie</div>
             </a>
             <?php
-            include 'getgames.php';
+            include 'bestellingen.php';
 
             ?>
         </div>

@@ -1,3 +1,63 @@
 body {
   background-color: #dfaeb4;
 }
+.main_content {
+  margin-top: 6em;
+  margin-left: 1em;
+}
+
+select,
+input {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+input:last-child {
+  background-color: #e77f8b;
+  color: black;
+  border: 1px solid black;
+  transition: 0.2s all;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  border: 1px solid black;
+}
+
+input:last-child:hover {
+  background-color: #e77f8ba1;
+  border-radius: 8px;
+}
+
+#titel {
+  background-color: #e77f8b;
+  width: fit-content;
+  padding: 8px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-underline-offset: 5px;
+}
+
+#cart {
+  position: absolute;
+  z-index: -2;
+  top: 8em;
+  left: 30%;
+  transform: translateX(-50%);
+  height: 350px;
+}
+
+#form,
+#titel {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#form {
+  top: 12em;
+}
