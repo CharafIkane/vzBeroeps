@@ -107,6 +107,13 @@ body {
     overflow-y: auto;
   }
 }
-.nav {
+.nav,
+.nav-links {
   z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+.nav-links {
+  right: 0;
 }

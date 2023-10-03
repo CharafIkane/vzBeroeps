@@ -1,15 +1,18 @@
 <?php
-$servername = "localhost";
-$username = "charaf_admin";
-$password = "1235vz1235";
-$dbname = "87797_verzameling";
+$db_host = "localhost:3306";
+$db_username = "charaf_admin";
+$db_password = "1235vz1235";
+$db_database = "87797_verzameling";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+
+$mysqli = mysqli_connect($db_host, $db_username, $db_password, $db_database);
 
 // Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+if (!$mysqli) {
+  echo "<script> console.log('FOUT: geen connectie naar database.')</script>";
+  echo "<script> console.log('ERROR: " . mysqli_connect_error() . "')</script>";
+  exit;
 } else {
-  echo "Connected successfully";
+  echo "<script> console.log('Verbinding met " . $db_database . " is gemaakt!')</script>";
 }
